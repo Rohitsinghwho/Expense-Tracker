@@ -1,0 +1,23 @@
+{
+    "button-color":{
+        "Income-button":{
+            "color1":"#B5DC52",
+            "color2":"#89E148",
+            "amtColor":"#F4BB4A"
+        },
+        "Expense-button":{
+            "color1":"#FF4747",
+            "color2":"#FF3838",
+            "amtColor":"#9DFF5B"
+        },
+        "Delete-button":"#FF3E3E",
+        "Edit-button":"#F4BB4A",
+        "pagination-number":"#43967B",
+        "pagination-icon":"#F1F1F1",
+        "Add-Expense":"#F4BB4A",
+        "cancel":"#D9D9D9"
+
+    },
+    "progress-bar":"#8784D2"
+
+}

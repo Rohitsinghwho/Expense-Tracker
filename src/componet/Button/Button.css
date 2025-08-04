@@ -1,0 +1,38 @@
+
+
+/* primary button css for laptops and all */
+
+.btn-primary{
+    padding:8px 15px 8px 15px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: smaller;
+    text-align: center;
+    border-width: 0px;
+    color: white;
+     box-shadow: 0px 3px 10px #00000040;
+
+}
+
+.btn-secondary{
+    /* padding: 10px; */
+    height: 45px;
+    width: 45px;
+    border-radius: 15px;
+    border-width: 0px;
+    text-align: center;
+    box-shadow: 0px 3px 10px #00000040;
+
+
+}
+
+@media (max-width:426px) {
+    .btn-primary{
+        font-size: smaller;
+    }
+    .btn-secondary{
+         height: 40px;
+        width: 40px;
+    }
+}

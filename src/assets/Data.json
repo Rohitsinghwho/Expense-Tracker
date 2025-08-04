@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Samose",
+    "date": "March 20, 2024",
+    "amount": 150,
+    "category": "Food"
+  },
+  {
+    "title": "Movie",
+    "date": "March 21, 2024",
+    "amount": 300,
+    "category": "Entertainment"
+  },
+  {
+    "title": "Auto",
+    "date": "March 22, 2024",
+    "amount": 50,
+    "category": "Travel"
+  },
+  {
+    "title": "Concert",
+    "date": "March 24, 2024",
+    "amount": 800,
+    "category": "Entertainment"
+  },
+  {
+    "title": "Bus Ticket",
+    "date": "March 25, 2024",
+    "amount": 70,
+    "category": "Travel"
+  },
+  {
+    "title": "Burger",
+    "date": "March 26, 2024",
+    "amount": 180,
+    "category": "Food"
+  },
+  {
+    "title": "Netflix",
+    "date": "March 27, 2024",
+    "amount": 499,
+    "category": "Entertainment"
+  },
+  {
+    "title": "Train",
+    "date": "March 28, 2024",
+    "amount": 120,
+    "category": "Travel"
+  },
+  {
+    "title": "Biryani",
+    "date": "March 29, 2024",
+    "amount": 200,
+    "category": "Food"
+  }
+]
