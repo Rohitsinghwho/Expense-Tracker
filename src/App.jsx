@@ -182,6 +182,7 @@ const App = () => {
               value={ExpForm.ExpCatgeory}
               onChange={(e)=>setExpForm({...ExpForm,ExpCatgeory:e.target.value})}
               >
+                <option value="">Select Category</option>
                 <option className="InputFields" value="entertainment">
                   Entertainment
                 </option>
