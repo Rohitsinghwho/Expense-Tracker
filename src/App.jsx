@@ -157,6 +157,7 @@ const App = () => {
             <div className="form-elements">
               <input 
               className="InputFields" 
+              name="title"
               type="text" 
               placeholder="Title" 
               value={ExpForm.ExpTitle}
@@ -165,6 +166,7 @@ const App = () => {
               <input
                 className="InputFields"
                 type="text"
+                name="price"
                 placeholder="Price"
                 value={ExpForm.ExpAmt}
                 onChange={(e)=>setExpForm({...ExpForm,ExpAmt:e.target.value})}
@@ -191,6 +193,7 @@ const App = () => {
               <input 
               className="InputFields" 
               type="date" 
+              name="date"
               value={ExpForm.date}
               onChange={(e)=>setExpForm({...ExpForm,date:e.target.value})}
               />
@@ -234,7 +237,7 @@ const App = () => {
           <form 
           className="form-container2" 
           onSubmit={handleWalletSub}>
-            <input  type="number" placeholder="Income Amount" className="InputFields" value={WalletForm.WalletAmt} onChange={(e)=>setWalletForm({WalletAmt:e.target.value})}/>
+            <input   type="number" placeholder="Income Amount" className="InputFields" value={WalletForm.WalletAmt} onChange={(e)=>setWalletForm({WalletAmt:e.target.value})}/>
             <button type="submit" className="btn-exp">
               Add Balance
             </button>
