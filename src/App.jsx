@@ -40,6 +40,7 @@ const App = () => {
     else{
       setWallet((prev)=>prev+amount);
       setWalletForm({WalletAmt:""});
+      setIsOpenWallet(false);
       return;
     }
   }
@@ -91,6 +92,7 @@ const App = () => {
         ExpCatgeory:"",
         date:""
       });
+      setIsOpenExp(false);
       return;
     }
   }
