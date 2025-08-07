@@ -4,6 +4,51 @@
 body{
     background-color: #3B3B3B;
 }
+.InputFields{
+    padding: 8px;
+    width: 250px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 1.1rem;
+    box-shadow: 0px 3px 10px #00000040;
+    
+}
+.btn-exp{
+     padding: 8px;
+    width: 200px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 1.1rem;
+    background-color: #F4BB4A;
+     box-shadow: 0px 3px 10px #00000040;
+}
+.btn-cancel{
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 1.1rem;
+     box-shadow: 0px 3px 10px #00000040;
+    background-color: #E3E3E3;
+}
+.form-container{
+    padding:10px;
+    /* width: 500px; */
+}
+.form-container2{
+    display: flex;
+    gap: 10px;
+}
+.form-container1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-elements{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
 .second-div{
     display:flex;
     flex-direction: row;
@@ -29,5 +74,13 @@ body{
         justify-content: space-between;
         gap: 30px;
         align-items: center;
+    }
+    .form-elements{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container2{
+        flex-direction: column;
     }
 }

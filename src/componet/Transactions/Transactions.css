@@ -22,6 +22,16 @@
   flex-direction: column;
   justify-content: center;
 }
+.no-tran{
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 20px;
+  border-width: 0px; 
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .circle-button {
   cursor: pointer;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import SecondaryHeading from "../Headings/SecondaryHeading"
 import SecondaryButton from "../Button/SecondaryButton"
 import { FaEdit } from "react-icons/fa";
@@ -10,16 +10,20 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdLocalMovies } from "react-icons/md";
 import { FaCarSide } from "react-icons/fa";
 import { MdAttachMoney } from "react-icons/md";
+import ExpenseContext from "../../Context/ExpenseContext/ExpenseContext"
 
-
-// data is a array of transactions
 
 const ITEMS_PER_PAGE=3;
-const Transactions = ({heading,data}) => {
+const Transactions = ({heading}) => {
+    
+  const {data}=useContext(ExpenseContext)
  const [page,setPage]=useState(0);
  const startIdx=page*ITEMS_PER_PAGE;
  const endIdx=startIdx+ITEMS_PER_PAGE;
- const currentElements=data.slice(startIdx,endIdx);
+ let currentElements=0;
+ if(data.length>0){
+     currentElements=data?.slice(startIdx,endIdx);
+ }
  const AvailableCategory={
     "Food":<IoFastFoodSharp/>,
     "Entertainment":<MdLocalMovies />,
@@ -37,10 +41,11 @@ const Transactions = ({heading,data}) => {
         setPage(prev=>prev+1);
     }
  }
+
   return (
     <section className='tra-section'>
         <SecondaryHeading heading={heading}/>
-        
+        {data.length>0?(
         <div className='transaction-box'>
             {currentElements.map((item,idx)=>(
                 <div key={idx}>
@@ -85,6 +90,13 @@ const Transactions = ({heading,data}) => {
             </button>
         </div>
         </div>
+        ):(
+            <div className="no-tran">
+                <div>
+                No transactions!
+                </div>
+            </div>
+        )}
     </section>
   )
 }
