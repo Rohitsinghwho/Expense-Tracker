@@ -3,16 +3,16 @@ import ExpenseContext from './ExpenseContext'
 const ExpenseProvider = ({children}) => {
 
     const [ExpenseBalance,setExpenseBalance]=useState(()=>{
-        const saved=localStorage.getItem("Expense");
+        const saved=localStorage.getItem("ExpenseBalance");
         return saved?JSON.parse(saved):0;
     });
     const [data,setData]=useState(()=>{
-        const saved=localStorage.getItem("Data");
+        const saved=localStorage.getItem("Expense");
         return saved?JSON.parse(saved):[];
     });
     useEffect(()=>{
-        localStorage.setItem("Expense",JSON.stringify(ExpenseBalance));
-        localStorage.setItem("Data",JSON.stringify(data));
+        localStorage.setItem("ExpenseBalance",JSON.stringify(ExpenseBalance));
+        localStorage.setItem("Expense",JSON.stringify(data));
     },[ExpenseBalance,data])
 
 

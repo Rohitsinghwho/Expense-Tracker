@@ -72,7 +72,8 @@ const Transactions = ({heading}) => {
                 }
              </div>
         ))}
-        <div style={{display:"flex",gap:"10px", alignItems:"center",justifyContent:"center", marginTop:"12px"}}>
+        {data.length>3&&
+        (<div style={{display:"flex",gap:"10px", alignItems:"center",justifyContent:"center", marginTop:"12px"}}>
             <button 
             className='circle-button'
             onClick={handlePrev}
@@ -89,6 +90,7 @@ const Transactions = ({heading}) => {
                 <IoIosArrowRoundForward size={30} />
             </button>
         </div>
+        )}
         </div>
         ):(
             <div className="no-tran">
