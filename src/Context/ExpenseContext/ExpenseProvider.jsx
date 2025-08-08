@@ -7,12 +7,12 @@ const ExpenseProvider = ({children}) => {
         return saved?JSON.parse(saved):0;
     });
     const [data,setData]=useState(()=>{
-        const saved=localStorage.getItem("Expense");
+        const saved=localStorage.getItem("expenses");
         return saved?JSON.parse(saved):[];
     });
     useEffect(()=>{
         localStorage.setItem("ExpenseBalance",JSON.stringify(ExpenseBalance));
-        localStorage.setItem("Expense",JSON.stringify(data));
+        localStorage.setItem("expenses",JSON.stringify(data));
     },[ExpenseBalance,data])
 
 
